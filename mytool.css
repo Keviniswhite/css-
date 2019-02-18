@@ -1,0 +1,223 @@
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+  display: block;
+}
+
+.fl {
+  display: block;
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cf {
+  clear: both;
+}
+
+.cf-left {
+  clear: left;
+}
+
+.cf-right {
+  clear: right;
+}
+
+/* 清除所有元素magin padding */
+body, header, footer, div, form, p, ul, li, article, map, nav, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* 特殊颜色 */
+/* 导航开始 */
+.nav-block {
+  display: block;
+}
+
+.nav-text-lineC {
+  line-height: 5em;
+}
+
+.nav-bg-default {
+  height: 5em;
+  background-color: #eee;
+}
+
+/* 导航结束 */
+/* 面板开始 */
+.backPanel {
+  display: block;
+  padding: 12px 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.backPanel-head {
+  display: block;
+  padding: 20px 0px;
+  border-bottom: 1px solid #eee;
+  text-indent: 1em;
+}
+
+.backPanel-body {
+  padding: 12px 0;
+  display: block;
+  border-bottom: 1px solid #eee;
+  color: rgb(45, 43, 43);
+}
+
+.backPanel-head, .backPanel-foot {
+  color: #666;
+}
+
+.backPanel-foot {
+  padding: 12px 0;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.backPanel-primary {
+  border: 1px solid rgb(26, 0, 171);
+}
+
+.backPanel-warnning {
+  border: 1px solid rgb(226, 200, 51);
+}
+
+.backPanel-success {
+  border: 1px solid rgb(94, 196, 52);
+}
+
+.backPanel-danger {
+  border: 1px solid rgb(226, 21, 21);
+}
+
+/* 面板结束 */
+/* 提示信息 */
+.intro-default {
+  display: block;
+  padding: 20px 0;
+  font-size: 1em;
+  color: rgb(161, 161, 161);
+  border-radius: 5px;
+  background-color: rgba(228, 230, 236, .5);
+  animation: sliderDown .6s ease-in-out;
+}
+
+.intro-success {
+  display: block;
+  padding: 20px 0;
+  font-size: 1em;
+  color: rgb(10, 137, 22);
+  border-radius: 5px;
+  background-color: rgba(16, 242, 11, .5);
+  animation: sliderDown .6s ease-in-out;
+}
+
+.intro-warnning {
+  display: block;
+  padding: 20px 0;
+  font-size: 1em;
+  color: rgb(137, 118, 4);
+  border-radius: 5px;
+  background-color: rgba(255, 234, 0, .5);
+  animation: sliderUp .6s forwards;
+}
+
+.intro-danger {
+  display: block;
+  padding: 20px 0;
+  font-size: 1em;
+  color: rgb(215, 27, 5);
+  border-radius: 5px;
+  background-color: rgba(247, 19, 1, .5);
+  animation: sliderDown .6s forwards;
+}
+
+/* 统一动画 */
+@keyframes sliderDown {
+  from, 20% {
+    opacity: .2;
+    display: none;
+    transform: translateY(-15px);
+  }
+
+  to, 70% {
+    opacity: .9;
+    display: block;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes sliderUp {
+  from {
+    opacity: .2;
+    transform: translateY(0px);
+  }
+
+  to {
+    display: none;
+    transform: translateY(-2px);
+  }
+}
+
+/* 提示信息结束 */
+/* 表单 */
+/* form {
+  border: 1px solid #000;
+} */
+input {
+  width: 100%;
+  line-height: 30px;
+  border: 1px solid #5f5f5f;
+  border-radius: 1px;
+}
+
+input:focus {
+  border: 1px solid skyblue;
+  border-radius: 1px;
+  box-shadow: 0px 0px 17px -2px rgb(83, 181, 240);
+  outline: none;
+}
